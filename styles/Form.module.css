@@ -1,0 +1,108 @@
+.form {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.forms {
+  max-width: 700px;
+  width: 100%;
+  padding: 25px 30px;
+  border-radius: 25px;
+  background: #f4f4f4;
+}
+
+.forms .heading {
+  font-size: 2rem;
+  font-weight: 700;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0 0 20px 0;
+}
+
+.forms .heading::before {
+  content: '';
+  position: absolute;
+  height: 3px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(135deg, #71b7e6, #9b5b);
+}
+
+.forms form .cardDetails {
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.forms form .cardDetails .cardBox {
+  width: calc(100% / 2 - 20px);
+  margin-bottom: 15px;
+}
+
+.forms form .cardDetails .cardBox .details {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.forms form .cardDetails .cardBox input {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  font-size: 16px;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+.forms form .button {
+  text-align: center;
+}
+
+.forms form .button input {
+  padding: 10px 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 100%;
+  width: 50%;
+  cursor: pointer;
+  outline: none;
+  border: 2px solid #FFAD00;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  background: #FFAD00;
+  transition: all 0.8s ease;
+}
+
+.forms form .button input:hover {
+ background: #fff;
+}
+
+
+@media (max-width: 584px) {
+  .forms {
+    max-width: 100%;
+  }
+
+  .forms form .cardDetails .cardBox {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  .forms form .circalform .category {
+    width: 100%;
+  }
+  /* .forms form .card-details {
+    max-height: 300px;
+    overflow: scroll;
+  } */
+}
